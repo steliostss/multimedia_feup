@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="compressed_mp3_after_editing_data" version="1.3.0" audacityversion="2.2.1" sel0="0.0000000000" sel1="21.0024489796" vpos="0" h="10.2180635829" zoom="123.6046330846" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="Software" value="LAME v3.97"/>
+		<tag name="COMMENTS" value="Encoded with Wave Editor"/>
+	</tags>
+	<wavetrack name="Compressed" channel="2" linked="0" mute="0" solo="0" height="320" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="926208">
+				<waveblock start="0">
+					<simpleblockfile filename="e000089b.au" len="262144" min="-0.22378" max="0.229748" rms="0.043861"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0000fb7.au" len="262144" min="-1.0" max="0.954617" rms="0.207884"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="e0000394.au" len="262144" min="-0.837199" max="0.900637" rms="0.212208"/>
+				</waveblock>
+				<waveblock start="786432">
+					<simpleblockfile filename="e0000cf4.au" len="139776" min="-0.338243" max="0.339423" rms="0.085582"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

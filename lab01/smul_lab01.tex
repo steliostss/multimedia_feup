@@ -1,0 +1,145 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{picture}
+\usepackage{booktabs}
+\usepackage{textcomp}
+\usepackage{pdflscape}
+\usepackage[left=2cm,right=2cm,top=2.5cm,bottom=2cm]{geometry}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage{url}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\newcommand{\comment}[1]{}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Faculdade de engenharia}
+\lhead{Universidade do Porto}
+\pagenumbering{arabic}
+
+
+\lstset{frame=tb,
+  aboveskip=3mm,
+  escapeinside={<@}{@>},
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breakatwhitespace=true,
+  tabsize=1,    
+  extendedchars=true,
+  literate={á}{{\'a}}1 {í}{{\'i}}1 {ý}{{\'y}}1 {ř}{{\ˇr}}1  {ã}{{\~a}}1 {é}{{\'e}}1,
+}
+
+\title{SMUL - lab 1}
+\author{\textit{Alena Tesařová (up201911219)} }
+\date{\today}
+
+\begin{document}
+\begin{center}
+\section*{SMUL -- lab 1}
+\textit{Alena Tesařová (up201911219)}
+
+\textit{Stylianos Tsagkarakis (up2019112311)}
+\end{center}{}
+
+\section{Task1 (individual -- Stylianos Tsagkarakis)}
+\textit{Do your equal loudness curves at \url{http://newt.phys.unsw.edu.au/jw/hearing.html}.}\\
+My curve can be see in Figure \ref{fig:loud}.
+\begin{figure}[!htb]
+     \centering
+     \includegraphics[scale=0.5]{curve_Stelios.png}
+     \caption{Measuring loudness}
+     \label{fig:loud}
+\end{figure}
+
+\section{Task2}
+\textit{Download the \textit{ExplainMe.mp3} sound, and open it in Sonic Visualiser. Using only simple visualizations (waveform plot, spectrum and spectrogram), explain what is this sound, and what psychoacoustic concepts it relates to. In your explanation, include the visualisations the best justify your explanation.} \\ 
+
+We can visualize the sound by some tools that Sonic Visualiser brings us. We analysed the sound \textit{ExplainMe.mp3} using wave form plot, spectrogram and spectrum. In the wave form, we can see that the there are 12 repetitions of same duration. If we look at the spectrogram we see that the dominant frequencies are from 200 -- 300 Hz (in Figure \ref{fig:1}). We can see that we have 5 loops of the same sound. Each loop contains 12 groups -- exactly as piano has keys in one octave. Each group contains overlapping notes that play at the same time are exactly one octave apart, and each scale fades in and fades out so that hearing the beginning or end of any given scale is impossible. This effect is called the \textbf{Shepard tone}. As we can see, the key to get this effect is to use volume to mask the replacement of older octaves with newer octaves that will always start from a lower tone, giving the illusion of an ascending tone overall, despite the average pitch staying constant
+
+From the psychoacoustical point of view, a Shepard tone is used to create the illusion of an ever increasing moment of intensity \cite{wiki}. It is getting more and more dramatic, intensity increases and we would easily connect this sound to some horror or action scenes. We can also have a descending Shepard tone, which leads to a different effect, as if the audience was falling or being under the influence of drugs.
+
+\subsection{Interesting fact}
+In Super Mario 64, a modified Shepard tone is incorporated into the music of the endless staircase, the staircase to the penultimate room in the castle. Much like a real Shepard tone, the staircase itself gives players the impression that they are constantly running upwards, when in reality the game has simply locked them in place, and turning around reveals that they were actually running in place halfway up the stairs. \cite{wiki}
+
+
+
+%Each note on each loop differs from the next one by 150-200 Hz
+%In each sound we have the same note but in many octaves. 
+
+%As we can as from the Figure there are 5 loops of the same sounds
+
+% From the psychoacoustical point of view, ...
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Notes:
+
+% - from the wave form we see repetition of the sound
+
+% - as we can see from the spectrogram the sound is composed by many frequencies. The highest amplitudes are in frequencies around 200-300 Hz in each repetition
+
+% - intensity is not changing (db) 
+
+% - loudness same
+
+% - same duration for each sound
+
+% - feelings: 
+
+% 1. Anxiety and intesity increases
+
+% - we have 5 "loops" of the same sounds. Each loop has 12 "notes" exactly as many as a piano has. The i-th sound one loop is the same as the i-th sound of another loop 
+
+% - perception -- it perceives that the pitch of the sound is increasing but it is just a subjective attribute (and can not be measured directly) 
+
+
+% - -11db max 
+% \begin{figure}[!htb]
+%      \centering
+%      \includegraphics[scale=0.5]{12_notes_and_waveform.png}
+%      \caption{Wave form}
+%      \label{fig:1}
+% \end{figure}
+
+
+\begin{figure}[!htb]
+     \centering
+     \includegraphics[scale=0.25]{full_spectrogram.png}
+     \caption{Full spectrogram of ExplainMe.mp3}
+     \label{fig:1}
+\end{figure}
+
+\begin{thebibliography}{Per00}
+
+	\bibitem[1]{wikiawstats}
+	\emph{Figuring out: Shepard Tone. [Online, update 26.6.2019]. URL \url{http://javierzumer.com/blog/2019/7/26/figuring-out-shepard-tone}}
+	
+	\bibitem[2]{wiki}
+	\emph{Shepard tone. [Online, update 6.3.2020]. URL \url{https://en.wikipedia.org/wiki/Shepard\_tone}}
+	
+
+\end{thebibliography}
+
+\end{document}
+
