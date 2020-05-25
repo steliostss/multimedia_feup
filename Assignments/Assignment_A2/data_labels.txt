@@ -1,0 +1,10 @@
+'lowlevel.spectral_centroid.mean',
+'lowlevel.spectral_flux.mean',
+'lowlevel.spectral_rms.mean',
+'lowlevel.spectral_spread.mean',
+'lowlevel.zerocrossingrate.mean',
+'lowlevel.erbbands_flatness_db.mean',
+'centroid',
+'effectiveduration'
+'logattacktime.logpoint2',
+'logattacktime.logpoint3',
